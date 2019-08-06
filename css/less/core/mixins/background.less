@@ -1,0 +1,40 @@
+// Background Clip
+// -----------------------------------------------------------------------------
+
+.background-clip(@clip: padding-box) {
+	-webkit-background-clip: @clip;
+	-moz-background-clip: @clip;
+	background-clip: @clip;
+}
+
+
+// Gradients
+// -----------------------------------------------------------------------------
+
+.gradient(@color: @background-color; @amount: 6.5%; @switch: false) {
+	& when (@switch = false) {
+
+		@top: @color;
+		@bottom: darken(@color, @amount);
+
+		background-image: -moz-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @top), color-stop(100%, @bottom));
+		background-image: -webkit-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -o-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -ms-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: linear-gradient(top bottom, @top 0%, @bottom 100%);
+	}
+
+	& when (@switch = true) {
+
+		@top: darken(@color, @amount);
+		@bottom: @color;
+
+		background-image: -moz-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @top), color-stop(100%, @bottom));
+		background-image: -webkit-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -o-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: -ms-linear-gradient(top, @top 0%, @bottom 100%);
+		background-image: linear-gradient(top bottom, @top 0%, @bottom 100%);
+	}
+}
