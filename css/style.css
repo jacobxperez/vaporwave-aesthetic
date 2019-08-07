@@ -106,7 +106,7 @@ progress[value] {
 dd,
 ol,
 ul {
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 dl,
@@ -491,7 +491,7 @@ html input[disabled]:hover {
 
 .container {
 	min-width: 20em;
-	max-width: 61.25em;
+	max-width: 63.75em;
 	margin: 0 auto;
 	padding-left: 1.25em;
 	padding-right: 1.25em;
@@ -511,7 +511,7 @@ body > .container:last-child {
 }
 @media screen and (max-width: 61.1875em) {
 	.container {
-		max-width: 52.5em;
+		max-width: 66.1875em;
 	}
 }
 @media screen and (max-width: 42.5em) {
@@ -776,7 +776,7 @@ body > .container:last-child {
 		width: 100%;
 	}
 }
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 62.5em) {
 	.large-1 {
 		width: 8.33333333%;
 	}
@@ -1166,6 +1166,15 @@ h6 {
 
 pre {
 	background-color: inherit;
+	border: .125em solid #c64799;
+}
+
+.content,
+.footer,
+.header,
+.sidebar {
+	margin-bottom: 1.25em;
+	padding: 1.25em 1.25em 0;
 	border: .125em solid #c64799;
 }
 
@@ -2179,16 +2188,16 @@ pre {
 }
 
 .indent {
-	padding-left: 2em;
+	padding-left: 1em;
 }
 
 .text-indent {
-	text-indent: 2em;
+	text-indent: 1em;
 }
 
 .text-outdent {
-	padding-left: 2em;
-	text-indent: -2em;
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 .text-left {
@@ -2226,7 +2235,7 @@ pre {
 		display: none;
 	}
 }
-@media screen and (min-width: 61.25em) {
+@media screen and (min-width: 62.5em) {
 	.hide-large,
 	.hide-medium-up,
 	.show-medium,

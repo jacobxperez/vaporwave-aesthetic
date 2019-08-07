@@ -73,7 +73,7 @@
 
 // indentation
 // for list items
-@indent: 32px;
+@indent: @base-font-size;
 
 
 // Headings
@@ -219,10 +219,10 @@
 
 // medium wrapper widths
 @wrapper-medium-min-width: (@wrapper-small-max-width + 1);
-@wrapper-medium-max-width: (800px + (@wrapper-padding * 2));
+@wrapper-medium-max-width: (@wrapper-large-max-width + (@wrapper-padding * 2) - 1);
 
 // large wrapper widths
-@wrapper-large-max-width: (940px + (@wrapper-padding * 2));
+@wrapper-large-max-width: (980px + (@wrapper-padding * 2));
 
 
 // Breakpoints
@@ -234,10 +234,10 @@
 
 // medium screen
 @breakpoint-medium-min: unit((@wrapper-medium-min-width / @root-font-size), em);
-@breakpoint-medium-max: unit(((@wrapper-large-max-width - 1) / @root-font-size), em);
+@breakpoint-medium-max: unit(((980px - 1) / @root-font-size), em);
 
 // large screen
-@breakpoint-large-min: unit((@wrapper-large-max-width / @root-font-size), em);
+@breakpoint-large-min: unit((1000px / @root-font-size), em);
 
 
 // Scale
