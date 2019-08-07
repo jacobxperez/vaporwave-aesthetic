@@ -5,14 +5,14 @@
 // ----------------------------------------------------------------------------/
 
 // colors
-@background-color: #fff;
-@font-color: #555;
+@background-color: #ffd8f1;
+@font-color: #c64799;
 @default: #e6e6e6;
-@primary: #06f;
-@secondary: #493d99;
+@primary: #7447c6;
+@secondary: #5771ff;
 @danger: #c00;
 @warning: #fa0;
-@success: #393;
+@success: #47c674;
 
 // margins
 @base-margin-y: 20px;
@@ -26,7 +26,7 @@
 @base-border-width: 1px; // can be set to off
 @base-border-style: solid;
 @base-border-color: rgba(0, 0, 0, 0.3);
-@base-border-radius: 4px;
+@base-border-radius: 0;
 
 
 // Typography
@@ -42,7 +42,7 @@
 @font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
 
 // font family
-@base-font-family: @font-sans;
+@base-font-family: @font-mono;
 
 // font size
 @root-font-size: 16px;
@@ -69,7 +69,7 @@
 // hr
 @hr-border-width: 2px; // can be set to off
 @hr-border-style: @base-border-style;
-@hr-border-color: @base-border-color;
+@hr-border-color: @font-color;
 
 // indentation
 // for list items
@@ -78,7 +78,7 @@
 
 // Headings
 // ----------------------------------------------------------------------------/
-@headings-font-family: off;
+@headings-font-family: @font-serif;
 @headings-font-weight: 400;
 @headings-leading: @base-leading;
 
@@ -126,8 +126,8 @@
 // Code
 // ----------------------------------------------------------------------------/
 @code-font-family: @font-mono;
-@code-background: #222;
-@code-color: #e6e6e6;
+@code-background: @primary;
+@code-color: @font-color;
 
 
 // Pre
@@ -183,7 +183,7 @@
 
 // Selection
 // ----------------------------------------------------------------------------/
-@selection-background: @secondary;
+@selection-background: #268F94;
 @selection-color: #fff;
 
 

@@ -30,11 +30,11 @@ html {
 }
 
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, sans-serif;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
 	font-weight: 400;
-	color: #555;
+	color: #c64799;
 	line-height: 1.5;
-	background-color: #fff;
+	background-color: #ffd8f1;
 	overflow: auto;
 }
 
@@ -145,17 +145,17 @@ hr {
 	display: block;
 	height: 1px;
 	margin-bottom: 1.5rem;
-	border-top: .125em solid rgba(0, 0, 0, 0.3);
+	border-top: .125em solid #c64799;
 }
 
 ::-moz-selection {
-	background-color: #493d99;
+	background-color: #268F94;
 	color: #fff;
 	text-shadow: none;
 }
 
 ::selection {
-	background-color: #493d99;
+	background-color: #268F94;
 	color: #fff;
 	text-shadow: none;
 }
@@ -166,6 +166,7 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
 	font-weight: 400;
 	margin-bottom: 1.5rem;
 	text-rendering: optimizelegibility;
@@ -214,7 +215,7 @@ strong {
 a {
 	text-decoration: none;
 	background-color: transparent;
-	color: #06f;
+	color: #7447c6;
 	cursor: pointer;
 }
 
@@ -278,16 +279,16 @@ samp {
 
 code {
 	line-height: 1;
-	background-color: #222;
-	color: #e6e6e6;
+	background-color: #7447c6;
+	color: #c64799;
 }
 
 pre {
 	margin-bottom: 1.5rem;
 	padding: .5em .875em;
 	white-space: pre;
-	background-color: #222;
-	color: #e6e6e6;
+	background-color: #7447c6;
+	color: #c64799;
 	overflow: auto;
 }
 
@@ -359,9 +360,9 @@ textarea {
 	border: .0625em solid rgba(0, 0, 0, 0.3);
 	width: 100%;
 	line-height: 24px;
-	-webkit-border-radius: .25em .25em .25em .25em;
-	-moz-border-radius: .25em .25em .25em .25em;
-	border-radius: .25em .25em .25em .25em;
+	-webkit-border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
 	box-shadow: none;
 }
 
@@ -380,8 +381,8 @@ input[type=url]:focus,
 input[type=week]:focus,
 select:focus,
 textarea:focus {
-	border-color: #06f;
-	color: #555;
+	border-color: #7447c6;
+	color: #c64799;
 	box-shadow: none;
 }
 
@@ -412,14 +413,14 @@ input[type=button] {
 	padding: .5em .875em;
 	border: .0625em solid rgba(0, 0, 0, 0.3);
 	background-color: #e6e6e6;
-	color: #555;
+	color: #c64799;
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
 	cursor: pointer;
-	-webkit-border-radius: .25em .25em .25em .25em;
-	-moz-border-radius: .25em .25em .25em .25em;
-	border-radius: .25em .25em .25em .25em;
+	-webkit-border-radius: 0 0 0 0;
+	-moz-border-radius: 0 0 0 0;
+	border-radius: 0 0 0 0;
 	-webkit-text-shadow: .0625em 0 .0625em rgba(0, 0, 0, 0.3);
 	-moz-text-shadow: .0625em 0 .0625em rgba(0, 0, 0, 0.3);
 	text-shadow: .0625em 0 .0625em rgba(0, 0, 0, 0.3);
@@ -1137,32 +1138,57 @@ body > .container:last-child {
 	}
 }
 
+body,
+html {
+	height: auto;
+}
+
+body {
+	text-align: justify;
+	hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: .333em;
+}
+
+pre {
+	background-color: inherit;
+	border: .125em solid #c64799;
+}
+
 .button-primary {
-	background-color: #06f;
+	background-color: #7447c6;
 	color: #fff;
 }
 
 .button-primary:focus,
 .button-primary:hover {
-	background-color: #1472ff;
+	background-color: #8057cb;
 }
 
 .button-primary:active {
-	background-color: #005eeb;
+	background-color: #693bbe;
 }
 
 .button-secondary {
-	background-color: #493d99;
+	background-color: #5771ff;
 	color: #fff;
 }
 
 .button-secondary:focus,
 .button-secondary:hover {
-	background-color: #5043a8;
+	background-color: #6b82ff;
 }
 
 .button-secondary:active {
-	background-color: #42378a;
+	background-color: #4360ff;
 }
 
 .button-danger {
@@ -1194,17 +1220,17 @@ body > .container:last-child {
 }
 
 .button-success {
-	background-color: #393;
+	background-color: #47c674;
 	color: #fff;
 }
 
 .button-success:focus,
 .button-success:hover {
-	background-color: #38a838;
+	background-color: #57cb80;
 }
 
 .button-success:active {
-	background-color: #2e8a2e;
+	background-color: #3bbe69;
 }
 @font-face {
 	font-family: "icons";
