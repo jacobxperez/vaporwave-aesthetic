@@ -1146,6 +1146,12 @@ html {
 body {
 	text-align: justify;
 	hyphens: auto;
+	background-image: -moz-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
+	background-image: -webkit-gradient(left top, left bottom, color-stop(80%, #ffd8f1), color-stop(100%, #ddf5f6));
+	background-image: -webkit-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
+	background-image: -o-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
+	background-image: -ms-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
+	background-image: linear-gradient(top bottom, #ffd8f1 80%, #ddf5f6 100%);
 }
 
 h1,
