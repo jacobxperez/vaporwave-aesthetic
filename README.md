@@ -57,7 +57,7 @@ We recommend to add all extra modules under folder [components](https://github.c
 
 ## Contributing
 
-Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave-aesthetic/issues) for bug reports, features requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
+Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave-aesthetic/issues) for bug reports, features requests and submitting pull requests.
 
 ### Bug Reports
 
@@ -69,11 +69,7 @@ Before opening a feature request, please take a moment to find out whether your 
 
 ### Pull Requests
 
-Please ask first before embarking on any significant pull request (e.g. implementing features, re-factoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. When contributing code to this project always ask yourself these questions.
-
-* Is it essential?
-* Will it add value?
-* Is this change necessary?
+Please ask first before embarking on any significant pull request (e.g. implementing features, re-factoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
 
 ## LICENSE
 
