@@ -1181,6 +1181,11 @@ pre {
 	overflow-y: scroll;
 }
 
+.title {
+	font-size: 375%;
+	text-align: center;
+}
+
 .button-primary {
 	background-color: #7447c6;
 	color: #fff;
