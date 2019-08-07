@@ -357,8 +357,9 @@ select,
 textarea {
 	display: block;
 	padding: .5rem .875rem;
-	border: .0625em solid rgba(0, 0, 0, 0.3);
+	border: .0625em solid #c64799;
 	width: 100%;
+	background-color: transparent;
 	line-height: 24px;
 	-webkit-border-radius: 0 0 0 0;
 	-moz-border-radius: 0 0 0 0;
