@@ -1177,6 +1177,8 @@ pre {
 	margin-bottom: 1.25em;
 	padding: 1.25em 1.25em 0;
 	border: .125em solid #c64799;
+	overflow-x: auto;
+	overflow-y: scroll;
 }
 
 .button-primary {
