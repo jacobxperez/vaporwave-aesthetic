@@ -1147,12 +1147,12 @@ html {
 body {
 	text-align: justify;
 	hyphens: auto;
-	background-image: -moz-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
-	background-image: -webkit-gradient(left top, left bottom, color-stop(80%, #ffd8f1), color-stop(100%, #ddf5f6));
-	background-image: -webkit-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
-	background-image: -o-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
-	background-image: -ms-linear-gradient(top, #ffd8f1 80%, #ddf5f6 100%);
-	background-image: linear-gradient(top bottom, #ffd8f1 80%, #ddf5f6 100%);
+	background-image: -moz-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -webkit-gradient(left top, left bottom, color-stop(0, #ddf5f6), color-stop(10%, #ffd8f1));
+	background-image: -webkit-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -o-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -ms-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: linear-gradient(top bottom, #ddf5f6 0, #ffd8f1 10%);
 }
 
 h1,
@@ -1177,12 +1177,14 @@ pre {
 	margin-bottom: 1.25em;
 	padding: 1.25em 1.25em 0;
 	border: .125em solid #c64799;
+	background-color: #ffd8f1;
 	overflow-x: auto;
 	overflow-y: scroll;
 }
 
 .title {
 	font-size: 375%;
+	font-kerning: none;
 	text-align: center;
 }
 
