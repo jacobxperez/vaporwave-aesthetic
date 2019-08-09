@@ -531,6 +531,56 @@ body > .container:last-child {
 	}
 }
 
+body,
+html {
+	height: auto;
+}
+
+body {
+	text-align: justify;
+	hyphens: auto;
+	background-image: -moz-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -webkit-gradient(left top, left bottom, color-stop(0, #ddf5f6), color-stop(10%, #ffd8f1));
+	background-image: -webkit-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -o-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: -ms-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
+	background-image: linear-gradient(top bottom, #ddf5f6 0, #ffd8f1 10%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-align: left;
+	text-transform: uppercase;
+	letter-spacing: .333em;
+}
+
+pre {
+	background-color: inherit;
+	border: .125em solid #c64799;
+}
+
+.content,
+.footer,
+.header,
+.sidebar {
+	margin-bottom: 1.25em;
+	padding: 1.25em 1.25em 0;
+	border: .125em solid #c64799;
+	background-color: #ffd8f1;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+
+.title {
+	font-size: 375%;
+	font-kerning: none;
+	text-align: center;
+}
+
 .row {
 	margin-left: -0.625rem;
 	margin-right: -0.625rem;
@@ -1137,56 +1187,6 @@ body > .container:last-child {
 	.large-1 .large-1 {
 		width: 100%;
 	}
-}
-
-body,
-html {
-	height: auto;
-}
-
-body {
-	text-align: justify;
-	hyphens: auto;
-	background-image: -moz-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
-	background-image: -webkit-gradient(left top, left bottom, color-stop(0, #ddf5f6), color-stop(10%, #ffd8f1));
-	background-image: -webkit-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
-	background-image: -o-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
-	background-image: -ms-linear-gradient(top, #ddf5f6 0, #ffd8f1 10%);
-	background-image: linear-gradient(top bottom, #ddf5f6 0, #ffd8f1 10%);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	text-align: left;
-	text-transform: uppercase;
-	letter-spacing: .333em;
-}
-
-pre {
-	background-color: inherit;
-	border: .125em solid #c64799;
-}
-
-.content,
-.footer,
-.header,
-.sidebar {
-	margin-bottom: 1.25em;
-	padding: 1.25em 1.25em 0;
-	border: .125em solid #c64799;
-	background-color: #ffd8f1;
-	overflow-x: auto;
-	overflow-y: scroll;
-}
-
-.title {
-	font-size: 375%;
-	font-kerning: none;
-	text-align: center;
 }
 
 .button-primary {
