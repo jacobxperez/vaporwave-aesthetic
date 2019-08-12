@@ -1,0 +1,68 @@
+// Navbar
+// ----------------------------------------------------------------------------/
+
+.navbar {
+	width: 100%;
+	.border-bottom();
+	background-color: #333;
+
+	a {
+		color: #fff;
+
+		&:focus {
+			outline: 0;
+		}
+
+		&.active,
+		&:hover {
+			color: darken(#fff, 20%);
+			text-decoration: none;
+			.transition();
+		}
+	}
+}
+
+.brand {
+	float: left;
+	display: block;
+	.margin-left(-10px);
+	.padding-left(10px);
+	.padding-right(10px);
+	.font-size(20px);
+	.line-height(44px, @base: 20px);
+
+	.icon-logo {
+		.margin-right(5px);
+	}
+
+	.icon-logo:before {
+		content: '\e8b1'
+	}
+}
+
+.nav {
+	margin-bottom: 0;
+}
+
+.nav {
+	float: right;
+}
+
+.nav {
+	> li {
+		float: left;
+	}
+
+	a {
+		.padding(10px);
+	}
+}
+
+.nav > li:last-child {
+	.margin-right(-10px);
+}
+
+.navbar + .@{wrapper-class},
+.navbar + .@{wrapper-class}-full {
+	.padding-top(@wrapper-padding-top * 2);
+}

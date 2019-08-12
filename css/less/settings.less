@@ -73,7 +73,7 @@
 
 // indentation
 // for list items
-@indent: @base-font-size;
+@indent: 32px;
 
 
 // Headings
@@ -156,6 +156,8 @@
 @form-padding-y: @base-padding-y;
 @form-padding-x: @base-padding-x;
 
+@form-background-color: @background-color;
+
 @form-border-width: @base-border-width; // can be set to off
 @form-border-color: @font-color;
 @form-border-color-focus: @link-color;
@@ -183,8 +185,8 @@
 
 // Selection
 // ----------------------------------------------------------------------------/
-@selection-background: #268F94;
-@selection-color: #fff;
+@selection-background: #d9d8ff;
+@selection-color: #000;
 
 
 // Grid System
@@ -219,10 +221,10 @@
 
 // medium wrapper widths
 @wrapper-medium-min-width: (@wrapper-small-max-width + 1);
-@wrapper-medium-max-width: (@wrapper-large-max-width + (@wrapper-padding * 2) - 1);
+@wrapper-medium-max-width: (800px + (@wrapper-padding * 2));
 
 // large wrapper widths
-@wrapper-large-max-width: (980px + (@wrapper-padding * 2));
+@wrapper-large-max-width: (940px + (@wrapper-padding * 2));
 
 
 // Breakpoints
@@ -234,10 +236,10 @@
 
 // medium screen
 @breakpoint-medium-min: unit((@wrapper-medium-min-width / @root-font-size), em);
-@breakpoint-medium-max: unit(((980px - 1) / @root-font-size), em);
+@breakpoint-medium-max: unit(((@wrapper-large-max-width - 1) / @root-font-size), em);
 
 // large screen
-@breakpoint-large-min: unit((1000px / @root-font-size), em);
+@breakpoint-large-min: unit((@wrapper-large-max-width / @root-font-size), em);
 
 
 // Scale
