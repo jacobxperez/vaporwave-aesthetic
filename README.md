@@ -53,8 +53,6 @@ We recommend to add all extra modules under folder [components](https://github.c
 	* [modules](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components/modules)
 	* [navigation](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components/navigation)
 
-*At this stage of development vaporwave has no predefine navigation.*
-
 ## Contributing
 
 Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave-aesthetic/issues) for bug reports, features requests and submitting pull requests.
