@@ -12,50 +12,50 @@ Vaporwave Aesthetic — Built with LESS
 	* [Bug Reports](#bug-reports)
 	* [Feature Requests](#feature-requests)
 	* [Pull Requests](#pull-requests)
+* [Design Principles](#design-principles)
 * [LICENSE](#license)
-
 
 ### Project Status
 
-Project under active development. **NO** stable version has been release.
+Project under active development. **NO** stable version has been released.
 
 ## Getting Started
 
-Start by **[downloading](https://github.com/jacobxperez/vaporwave-aesthetic/archive/master.zip)** the [repository](https://github.com/jacobxperez/vaporwave-aesthetic) or by cloning the project:
+Start by **[downloading](https://github.com/jacobxperez/vaporwave/archive/master.zip)** the [repository](https://github.com/jacobxperez/vaporwave) or by cloning the project:
 
-	$ git clone https://github.com/jacobxperez/vaporwave-aesthetic.git
+	$ git clone https://github.com/jacobxperez/vaporwave.git
 
-*Keep in mind that this project is under active development and no stable version has been release.*
+*Keep in mind that this project is under active development and no stable version has been released.*
 
 ### Default Build
 
-The easiest way to include [Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) in your projects is by copying the pre-compiled CSS file into your project folder, and then link to it in HTML.
+The easiest way to include [Vaporwave](https://jacobxperez.github.io/vaporwave/) in your projects is by copying the pre-compiled CSS file into your project folder and then link to it in HTML.
 
-* [/css/style.css](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/style.css)
+* [/css/style.css](https://github.com/jacobxperez/vaporwave/blob/master/css/style.css)
 
 ### Custom Build
 
-[Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) is build on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/style.less) for compiling all necessary modules for your website and the [settings files](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/less/settings) for adjusting the values of fonts, colors, padding and more.
+[Vaporwave](https://jacobxperez.github.io/vaporwave/) is built on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) for compiling all necessary modules for your website and the [variable files](https://github.com/jacobxperez/vaporwave/blob/master/css/less/variables) for adjusting the values of fonts, colors, padding and more.
 
-* [/css/style.less](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/style.less) (for compiling all LESS modules)
-* [/css/less/settings](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/less/settings) (for changing the settings)
+* [/css/style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) (for compiling all LESS modules)
+* [/css/less/variables](https://github.com/jacobxperez/vaporwave/blob/master/css/less/variables) (for changing the settings)
 
-All main components and dependencies can be found under folder [core](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/core).
+All main components and dependencies can be found under folder [core](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core).
 
-* [/css/less/core](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/core)
-	* [reset](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/core/reset)
-	* [layout](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/core/layout)
-	* [mixins](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/core/mixins)
+* [/css/less/core](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core)
+	* [reset](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/reset)
+	* [layout](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/layout)
+	* [mixins](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/mixins)
 
-We recommend to add all extra modules under folder [components](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components) then link to them on file [style.less](https://github.com/jacobxperez/vaporwave-aesthetic/blob/master/css/style.less) for compiling.
+We recommend to adding extra modules under folder [components](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components) then link to them on file [style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) for compiling.
 
-* [/css/less/components](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components)
-	* [modules](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components/modules)
-	* [navigation](https://github.com/jacobxperez/vaporwave-aesthetic/tree/master/css/less/components/navigation)
+* [/css/less/components](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components)
+	* [modules](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components/modules)
+	* [navigation](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components/navigation)
 
 ## Contributing
 
-Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave-aesthetic/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave-aesthetic/issues) for bug reports, features requests and submitting pull requests.
+Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave/issues) for bug reports, feature requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
 
 ### Bug Reports
 
@@ -67,7 +67,11 @@ Before opening a feature request, please take a moment to find out whether your 
 
 ### Pull Requests
 
-Please ask first before embarking on any significant pull request (e.g. implementing features, re-factoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
+Please ask first before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. When contributing code to this project always ask yourself these questions.
+
+* Is it essential?
+* Will it add value?
+* Is this change necessary?
 
 ## LICENSE
 
