@@ -55,7 +55,7 @@ We recommend to adding extra modules under folder [components](https://github.co
 
 ## Contributing
 
-Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave/issues) for bug reports, feature requests and submitting pull requests. Please read our [Design Principles](#design-principles) to better understand the nature and the direction of the project.
+Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave/issues) for bug reports, feature requests and submitting pull requests.
 
 ### Bug Reports
 
