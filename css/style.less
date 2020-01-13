@@ -1,103 +1,98 @@
-//out: ../css/style.css, sourcemap: false, compress: false
+// out: ../css/style.css, sourcemap: false, compress: false
 
-/* Vaporwave Aesthetic <https://github.com/jacobxperez/vaporwave-aesthetic>
+/* Essentials <https://github.com/jacobxperez/essentials>
  * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
 ------------------------------------------------------------------------------*/
 
 
-// Variables
+// Global Imports
 // ----------------------------------------------------------------------------/
-@import "less/variables/global.less";
-@import "less/variables/wrapper.less";
-@import "less/variables/grid-system.less";
-@import "less/variables/typography.less";
-@import "less/variables/iconography.less";
-@import "less/variables/code.less";
-@import "less/variables/pre.less";
-@import "less/variables/blockquote.less";
-@import "less/variables/table.less";
-@import "less/variables/form.less";
-@import "less/variables/button.less";
-@import "less/variables/navbar.less";
-@import "less/variables/menu.less";
-@import "less/variables/breakpoints.less";
 
+// Variables
+@import "import-var.less";
 
 // Mixins
-// ----------------------------------------------------------------------------/
-@import "less/core/mixins/font.less";
-@import "less/core/mixins/positioning.less";
-@import "less/core/mixins/box-sizing.less";
-@import "less/core/mixins/buttons.less";
-@import "less/core/mixins/width.less";
-@import "less/core/mixins/height.less";
-@import "less/core/mixins/paddings.less";
-@import "less/core/mixins/margins.less";
-@import "less/core/mixins/borders.less";
-@import "less/core/mixins/background.less";
-@import "less/core/mixins/shadows.less";
-@import "less/core/mixins/scale.less";
-@import "less/core/mixins/transform.less";
-@import "less/core/mixins/transition.less";
-@import "less/core/mixins/opacity.less";
-@import "less/core/mixins/selection.less";
-@import "less/core/mixins/clearfix.less";
-@import "less/core/mixins/grid-system.less";
+@import "import-mixins.less";
 
 
-// CSS Reset
+// Reset
 // ----------------------------------------------------------------------------/
 
-// base
-@import "less/core/reset/base.less";
+// Base v1.0
+@import "less/components/reset/base.less";
 
-// Typography
-@import "less/core/reset/typography.less";
+// Typography v1.0
+@import "less/components/reset/typography.less";
 
-// Code
-@import "less/core/reset/code.less";
+// Code v1.0
+@import "less/components/reset/code.less";
 
-// Blockquote
-@import "less/core/reset/blockquote.less";
+// Blockquote v1.0
+@import "less/components/reset/blockquote.less";
 
-// Tables
-@import "less/core/reset/tables.less";
+// Tables v1.0
+@import "less/components/reset/tables.less";
 
-// Forms
-@import "less/core/reset/forms.less";
+// Forms v1.0
+@import "less/components/reset/forms.less";
 
-// Button
-@import "less/core/reset/button.less";
+// Button v1.0
+@import "less/components/reset/button.less";
 
 
-// Components
+// Layout
 // ----------------------------------------------------------------------------/
 
-// Clearfix
-@import "less/core/layout/clearfix.less";
+// Clearfix v1.0
+@import "less/components/layout/clearfix.less";
 
-// Page Wrapper
-@import "less/core/layout/wrapper.less";
+// Page Wrapper v1.0
+@import "less/components/layout/wrapper.less";
 
-// Vaporwave
-@import "less/components/modules/vaporwave.less";
+// Grid System v1.0
+@import "less/components/layout/grid-system.less";
 
-// Grid System
-@import "less/core/layout/grid-system.less";
 
-// Nav
+// UI Elements
+// ----------------------------------------------------------------------------/
+
+// Navigation v1.0
 @import "less/components/navigation/nav.less";
 
-// Buttons
+// Breadcrumb v1.0
+@import "less/components/navigation/breadcrumb.less";
+
+// Navbar v1.0
+@import "less/components/navigation/navbar.less";
+
+// Dropdown v1.0
+@import "less/components/modules/dropdown.less";
+
+// Dropdown Accordion V1.0
+@import "less/components/modules/dropdown-accordion.less";
+
+// Dropdown Menu v1.0
+@import "less/components/navigation/dropdown-menu.less";
+
+// Buttons v1.0
 @import "less/components/modules/buttons.less";
 
-// Utilities
-@import "less/core/layout/utilities.less";
 
-// Icons
+// Custom
+// ----------------------------------------------------------------------------/
+@import "import-custom.less";
+
+
+// Extras
+// ----------------------------------------------------------------------------/
+
+// Utilities v1.0
+@import "less/components/modules/utilities.less";
+
+// Icons v1.0
 @import "less/components/modules/icons.less";
 
-// Print
-@import "less/core/layout/print.less";
+// Print v1.0
+@import "less/components/layout/print.less";
