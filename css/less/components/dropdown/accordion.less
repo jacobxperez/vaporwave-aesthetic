@@ -1,15 +1,17 @@
-// Dropdown Accordion V1.0
+// Accordion V1.0
 // ----------------------------------------------------------------------------/
-.dropdown-accordion {
+.accordion {
     position: relative;
+    list-style-type: none;
+}
+
+.accordion-box {
     display: none;
     width: 100%;
-    font-style: normal;
-    font-weight: 400;
-    text-align: left;
     .transition();
 }
 
-.drop > .dropdown-accordion {
+// added by javascript
+.accordion-active + .accordion-box {
     display: block;
 }

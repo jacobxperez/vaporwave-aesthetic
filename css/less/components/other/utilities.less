@@ -1,4 +1,5 @@
-// Utilities V1.0
+// Utilities v1.0
+// ----------------------------------------------------------------------------/
 
 // Floats
 // ----------------------------------------------------------------------------/
@@ -13,27 +14,20 @@
 
 // Position
 // ----------------------------------------------------------------------------/
-
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-}
-
+.fixed-top,
 .fixed-bottom {
     position: fixed;
     right: 0;
-    bottom: 0;
     left: 0;
     z-index: 1000;
 }
 
-.sticky-top {
-    position: sticky;
+.fixed-top {
     top: 0;
-    z-index: 1000;
+}
+
+.fixed-bottom {
+    bottom: 0;
 }
 
 .top {
@@ -44,11 +38,18 @@
     bottom: 100%;
 }
 
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
 
 // Alignment
 // ----------------------------------------------------------------------------/
-
-.indent {
+.block-indent {
     .padding-left(@indent);
 }
 
@@ -81,7 +82,6 @@
 
 // Visibility
 // ----------------------------------------------------------------------------/
-
 .show-print {
     display: none;
 }
@@ -89,7 +89,6 @@
 
 // Small Screen
 // ----------------------------------------------------------------------------/
-
 @media screen and (max-width: @breakpoint-small-max) {
     .float-left-@{small-prefix} {
         float: left;
@@ -99,6 +98,7 @@
         float: right;
     }
 
+    .hide-@{medium-prefix}-down,
     .hide-@{small-prefix},
     .show-@{medium-prefix},
     .show-@{large-prefix} {
@@ -109,7 +109,6 @@
 
 // Medium Screen
 // ----------------------------------------------------------------------------/
-
 @media screen and (min-width: @breakpoint-medium-min) and (max-width: @breakpoint-medium-max) {
     .float-left-@{medium-prefix} {
         float: left;
@@ -120,6 +119,7 @@
     }
 
     .hide-@{medium-prefix}-up,
+    .hide-@{medium-prefix}-down,
     .hide-@{medium-prefix},
     .show-@{small-prefix},
     .show-@{large-prefix} {
@@ -130,7 +130,6 @@
 
 // Large Screen
 // ----------------------------------------------------------------------------/
-
 @media screen and (min-width: @breakpoint-large-min) {
     .float-left-@{large-prefix} {
         float: left;

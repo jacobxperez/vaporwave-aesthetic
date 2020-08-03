@@ -1,6 +1,5 @@
 // Font Family V1.0
 // -----------------------------------------------------------------------------
-
 .font-family(@font-family) {
     & when not (@font-family = off) {
         font-family: @font-family;
@@ -8,9 +7,8 @@
 }
 
 
-// Font Face
+// Font Face V1.0
 // -----------------------------------------------------------------------------
-
 .font-face(@name; @path) {
     @font-face {
         font-family: '@{name}';
@@ -24,10 +22,9 @@
 }
 
 
-// Font Size
+// Font Size V1.0
 // -----------------------------------------------------------------------------
-
-.font-size(@size: @base-font-size; @base: @base-font-size; @unit: %) {
+.font-size(@size: @base-font-size; @base: @base-font-size; @unit: rem) {
 
     & when not (@size = off) {
 
@@ -36,14 +33,12 @@
             font-size: @a;
         }
 
-        & when (@unit = vw),
-        (@unit = vh) {
+        & when (@unit = vw), (@unit = vh) {
             @a: unit(((@size / @base) * 100), @unit);
             font-size: @a;
         }
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@size / @base), @unit);
             font-size: @a;
         }
@@ -58,15 +53,13 @@
 }
 
 
-// Line Height
+// Line Height V1.0
 // -----------------------------------------------------------------------------
-
 .line-height(@height: @base-line-height; @base: @base-font-size; @unit: none) {
 
     & when not (@height = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@height / @base), @unit);
             line-height: @a;
         }
@@ -86,13 +79,13 @@
 }
 
 
-// Text Indent
+// Text Indent V1.0
 // -----------------------------------------------------------------------------
+.text-indent (@text-indent: @indent; @base: @base-font-size; @unit: rem) {
 
-.text-indent (@text-indent: @indent; @base: @base-font-size; @unit: em) {
-    & when (@unit = em),
-    (@unit = rem) {
+    & when (@unit = em), (@unit = rem) {
         @a: unit((@text-indent / @base), @unit);
         text-indent: @a;
     }
+
 }

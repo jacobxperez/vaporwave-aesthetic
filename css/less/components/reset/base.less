@@ -1,6 +1,5 @@
 // Base Styles V1.0
 // ----------------------------------------------------------------------------/
-
 * {
     .box-sizing;
     margin: 0;
@@ -9,27 +8,27 @@
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
-    color: inherit;
     vertical-align: baseline;
+    color: inherit;
     outline: 0;
 }
 
-body,
-html {
+html,
+body {
     height: 100%;
 }
 
 html {
-    .font-size(@base: @root-font-size);
+    .font-size(@unit: %);
 }
 
 body {
+    overflow: auto;
     font-family: @base-font-family;
     font-weight: 400;
-    color: @font-color;
     .line-height(@base-line-height);
+    color: @font-color;
     background-color: @background-color;
-    overflow: auto;
 }
 
 article,
@@ -104,7 +103,7 @@ ul {
 dl,
 ol,
 ul {
-    .margin-bottom(@base-leading; @unit: rem);
+    .margin-bottom(@base-leading);
     list-style-position: outside;
 }
 
@@ -120,7 +119,7 @@ hr {
     .box-sizing(content-box);
     display: block;
     height: 1px;
-    .margin-bottom(@base-leading; @unit: rem);
+    .margin-bottom(@base-leading);
     .border-top(@hr-border-width; @hr-border-style; @hr-border-color);
 }
 

@@ -1,4 +1,4 @@
-// out: ../css/style.css, sourcemap: false, compress: false
+// out: style.css, sourcemap: false, compress: false
 
 /* Essentials <https://github.com/jacobxperez/essentials>
  * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
@@ -11,88 +11,56 @@
 // ----------------------------------------------------------------------------/
 
 // Variables
-@import "import-var.less";
+@import "less/imports/variables.less";
 
 // Mixins
-@import "import-mixins.less";
+@import "less/imports/mixins.less";
 
+
+// Components
+// ----------------------------------------------------------------------------/
 
 // Reset
-// ----------------------------------------------------------------------------/
+@import "less/imports/reset.less";
 
-// Base v1.0
-@import "less/components/reset/base.less";
-
-// Typography v1.0
-@import "less/components/reset/typography.less";
-
-// Code v1.0
-@import "less/components/reset/code.less";
-
-// Blockquote v1.0
-@import "less/components/reset/blockquote.less";
-
-// Tables v1.0
-@import "less/components/reset/tables.less";
-
-// Forms v1.0
-@import "less/components/reset/forms.less";
-
-// Button v1.0
-@import "less/components/reset/button.less";
-
-
-// Layout
-// ----------------------------------------------------------------------------/
-
-// Clearfix v1.0
+// Clearfix
 @import "less/components/layout/clearfix.less";
 
-// Page Wrapper v1.0
+// Page Wrapper
 @import "less/components/layout/wrapper.less";
 
-// Grid System v1.0
+// Grid System
 @import "less/components/layout/grid-system.less";
 
-
-// UI Elements
-// ----------------------------------------------------------------------------/
-
-// Navigation v1.0
+// Navigation
 @import "less/components/navigation/nav.less";
 
-// Breadcrumb v1.0
+// Breadcrumb
 @import "less/components/navigation/breadcrumb.less";
 
-// Navbar v1.0
+// Navbar
 @import "less/components/navigation/navbar.less";
 
-// Dropdown v1.0
-@import "less/components/modules/dropdown.less";
+// Dropdown
+@import "less/components/dropdown/dropdown.less";
 
-// Dropdown Accordion V1.0
-@import "less/components/modules/dropdown-accordion.less";
+// Dropdown Menu
+@import "less/components/dropdown/dropdown-menu.less";
 
-// Dropdown Menu v1.0
-@import "less/components/navigation/dropdown-menu.less";
+// Accordion
+@import "less/components/dropdown/accordion.less";
 
-// Buttons v1.0
-@import "less/components/modules/buttons.less";
-
+// Buttons
+@import "less/components/other/buttons.less";
 
 // Custom
-// ----------------------------------------------------------------------------/
-@import "import-custom.less";
+@import "custom.less";
 
+// Utilities
+@import "less/components/other/utilities.less";
 
-// Extras
-// ----------------------------------------------------------------------------/
+// Icons
+@import "less/components/other/icons.less";
 
-// Utilities v1.0
-@import "less/components/modules/utilities.less";
-
-// Icons v1.0
-@import "less/components/modules/icons.less";
-
-// Print v1.0
+// Print
 @import "less/components/layout/print.less";

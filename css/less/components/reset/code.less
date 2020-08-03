@@ -1,6 +1,5 @@
 // Code V1.0
 // ----------------------------------------------------------------------------/
-
 code,
 kbd,
 pre,
@@ -15,12 +14,12 @@ code {
 }
 
 pre {
-    .margin-bottom(@base-leading; @unit: rem);
+    overflow: auto;
+    .margin-bottom(@base-leading);
     .padding();
     white-space: @pre-white-space;
     background-color: @pre-background-color;
     color: @pre-color;
-    overflow: auto;
 
     code {
         background-color: inherit;

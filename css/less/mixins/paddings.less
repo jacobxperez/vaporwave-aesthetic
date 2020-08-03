@@ -1,12 +1,10 @@
 // Paddings V1.0
 // -----------------------------------------------------------------------------
-
-.padding(@top: @base-padding-y; @right: @base-padding-x; @bottom: @top; @left: @right; @base: @base-font-size; @unit: em) {
+.padding(@top: @base-padding-y; @right: @base-padding-x; @bottom: @top; @left: @right; @base: @base-font-size;@unit: rem) {
 
     & when not (@top = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@top / @base), @unit);
             @b: unit((@right / @base), @unit);
             @c: unit((@bottom / @base), @unit);
@@ -26,12 +24,11 @@
 
 }
 
-.padding-top(@top: @base-padding-y; @base: @base-font-size; @unit: em) {
+.padding-top(@top: @base-padding-y; @base: @base-font-size;@unit: rem) {
 
     & when not (@top = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@top / @base), @unit);
             padding-top: @a;
         }
@@ -45,12 +42,11 @@
 
 }
 
-.padding-right(@right: @base-padding-x; @base: @base-font-size; @unit: em) {
+.padding-right(@right: @base-padding-x; @base: @base-font-size;@unit: rem) {
 
     & when not (@right = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@right / @base), @unit);
             padding-right: @a;
         }
@@ -64,12 +60,11 @@
 
 }
 
-.padding-bottom(@bottom: @base-padding-y; @base: @base-font-size; @unit: em) {
+.padding-bottom(@bottom: @base-padding-y; @base: @base-font-size;@unit: rem) {
 
     & when not (@bottom = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@bottom / @base), @unit);
             padding-bottom: @a;
         }
@@ -83,12 +78,11 @@
 
 }
 
-.padding-left(@left: @base-padding-x; @base: @base-font-size; @unit: em) {
+.padding-left(@left: @base-padding-x; @base: @base-font-size;@unit: rem) {
 
     & when not (@left = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@left / @base), @unit);
             padding-left: @a;
         }

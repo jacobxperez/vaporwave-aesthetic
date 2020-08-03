@@ -1,12 +1,10 @@
 // Margins V1.0
 // -----------------------------------------------------------------------------
-
-.margin(@top: @base-margin-y; @right: @base-margin-x; @bottom: @top; @left: @right; @base: @base-font-size; @unit: em) {
+.margin(@top: @base-margin-y; @right: @base-margin-x; @bottom: @top; @left: @right; @base: @base-font-size;@unit: rem) {
 
     & when not (@top = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@top / @base), @unit);
             @b: unit((@right / @base), @unit);
             @c: unit((@bottom / @base), @unit);
@@ -26,12 +24,11 @@
 
 }
 
-.margin-top(@top: @base-margin-y; @base: @base-font-size; @unit: em) {
+.margin-top(@top: @base-margin-y; @base: @base-font-size;@unit: rem) {
 
     & when not (@top = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@top / @base), @unit);
             margin-top: @a;
         }
@@ -45,12 +42,11 @@
 
 }
 
-.margin-right(@right: @base-margin-x; @base: @base-font-size; @unit: em) {
+.margin-right(@right: @base-margin-x; @base: @base-font-size;@unit: rem) {
 
     & when not (@right = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@right / @base), @unit);
             margin-right: @a;
         }
@@ -64,12 +60,11 @@
 
 }
 
-.margin-bottom(@bottom: @base-margin-y; @base: @base-font-size; @unit: em) {
+.margin-bottom(@bottom: @base-margin-y; @base: @base-font-size;@unit: rem) {
 
     & when not (@bottom = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@bottom / @base), @unit);
             margin-bottom: @a;
         }
@@ -83,12 +78,11 @@
 
 }
 
-.margin-left(@left: @base-margin-x; @base: @base-font-size; @unit: em) {
+.margin-left(@left: @base-margin-x; @base: @base-font-size;@unit: rem) {
 
     & when not (@left = off) {
 
-        & when (@unit = em),
-        (@unit = rem) {
+        & when (@unit = em), (@unit = rem) {
             @a: unit((@left / @base), @unit);
             margin-left: @a;
         }
