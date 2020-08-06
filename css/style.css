@@ -16,11 +16,6 @@
     outline: 0;
 }
 
-body,
-html {
-    height: 100%;
-}
-
 html {
     font-size: 100%;
 }
@@ -1331,11 +1326,6 @@ body > .container:last-child {
 
 .button-success:active {
     background-color: #2e8a2e;
-}
-
-body,
-html {
-    height: auto;
 }
 
 body {
