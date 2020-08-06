@@ -1,6 +1,6 @@
 # [V A P O R W A V E](https://jacobxperez.github.io/vaporwave-aesthetic/)
 
-Vaporwave Aesthetic — Built with LESS
+Vaporwave Aesthetic
 
 ## Table of Contents
 
