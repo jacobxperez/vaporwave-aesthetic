@@ -1365,10 +1365,7 @@ pre {
     border: .125rem solid #c64799;
 }
 
-.content,
-.footer,
-.header,
-.sidebar {
+.section-block {
     margin-bottom: 1.25rem;
     padding: 1.25rem 1.25rem 0;
     border: .125rem solid #c64799;
