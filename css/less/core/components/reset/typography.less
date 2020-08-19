@@ -1,4 +1,4 @@
-// Typography V1.0
+// Typography
 // ----------------------------------------------------------------------------/
 h1,
 h2,
@@ -9,7 +9,6 @@ h6 {
     .font-family(@headings-font-family);
     font-weight: @headings-font-weight;
     .margin-bottom(@headings-leading);
-    text-rendering: optimizelegibility;
 }
 
 h1 {
@@ -52,39 +51,37 @@ p {
     .margin-bottom(@base-leading);
 }
 
+a {
+    text-decoration: none;
+    .background-color(transparent);
+    color: @link-color;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        outline: 0;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        outline: thin dotted;
+        outline-offset: unit((-2px / @root-font-size), rem);
+    }
+}
+
 b,
 strong {
     font-weight: 700;
 }
 
-a {
-    text-decoration: @link-decoration;
-    .background-color(transparent);
-    color: @link-color;
-    cursor: pointer;
-
-    &:focus {
-        outline: thin dotted;
-        outline-offset: -2px;
-    }
-
-    &:hover {
-        text-decoration: @link-decoration-hover;
-    }
-
-    &:hover,
-    &:active {
-        outline: 0;
-    }
-}
-
+i,
+em,
 dfn {
     font-style: italic;
 }
 
 abbr[title],
 dfn[title] {
-    border-bottom: 0 none;
     text-decoration: underline;
     text-decoration: underline dotted;
     cursor: help;

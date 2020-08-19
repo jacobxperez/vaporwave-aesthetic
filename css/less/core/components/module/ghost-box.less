@@ -1,17 +1,16 @@
-// Accordion V1.0
+// Ghost Box
 // ----------------------------------------------------------------------------/
-.accordion {
-    position: relative;
-    list-style-type: none;
-}
-
-.accordion-box {
+.ghost-box {
     display: none;
     width: 100%;
+    margin-bottom: 0;
+    .min-width(@ghost-box-min-width);
+    visibility: hidden;
     .transition();
 }
 
 // added by javascript
-.accordion-active + .accordion-box {
+.js-toggle-active + .ghost-box {
     display: block;
+    visibility: visible;
 }

@@ -1,0 +1,80 @@
+// Buttons
+// ----------------------------------------------------------------------------/
+.@{button-class} {
+    display: inline-block;
+    .padding(@button-padding-y; @button-padding-x);
+    .border(@button-border-width; solid; @button-border-color);
+    .border-radius(@button-border-radius);
+    .color(@button-color);
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+        outline: 0;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: thin dotted;
+        outline-offset: unit((-2px / @root-font-size), rem);
+    }
+}
+
+
+// Buttons Frames
+// ----------------------------------------------------------------------------/
+.@{button-class}.frame-primary {
+    &:hover,
+    &:active {
+        border-color: darken(@primary, 8%);
+        color: darken(@primary, 8%);
+    }
+}
+
+
+.@{button-class}.frame-secondary {
+    &:hover,
+    &:active {
+        border-color: darken(@secondary, 8%);
+        color: darken(@secondary, 8%);
+    }
+}
+
+
+// Button Colors
+// ----------------------------------------------------------------------------/
+.@{button-class}.primary-bg {
+    &:hover,
+    &:active {
+        background-color: darken(@primary, 5%);
+    }
+}
+
+
+.@{button-class}.secondary-bg {
+    &:hover,
+    &:active {
+        background-color: darken(@secondary, 5%);
+    }
+}
+
+
+// Disabled
+// ----------------------------------------------------------------------------/
+.disabled {
+    border-color: @button-disabled-border-color;
+    background-color: @button-disabled-background-color;
+    color: @button-disabled-color;
+    cursor: not-allowed;
+
+    &:hover,
+    &:active {
+        background-color: @button-disabled-background-color;
+        color: @button-disabled-color;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
