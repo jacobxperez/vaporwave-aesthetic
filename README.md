@@ -21,7 +21,8 @@ Start by **[downloading](https://github.com/jacobxperez/vaporwave/archive/master
 
 The easiest way to include [Vaporwave](https://jacobxperez.github.io/vaporwave/) in your projects is by copying the pre-compiled CSS file into your project folder and then link to it in HTML.
 
-* [/css/style.css](https://github.com/jacobxperez/vaporwave/blob/master/css/style.css)
+* [/css](https://github.com/jacobxperez/vaporwave/tree/master/css)
+	* [style.css](https://github.com/jacobxperez/vaporwave/blob/master/css/style.css)
 
 ### Custom Build
 
