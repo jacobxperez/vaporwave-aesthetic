@@ -1,8 +1,8 @@
 // Utilities
 // ----------------------------------------------------------------------------/
-
 .block {
     display: block;
+    width: 100%;
 }
 
 // Floats
@@ -104,23 +104,12 @@
     hyphens: auto;
 }
 
-.leading-top {
-    .margin-top(@base-leading);
-}
 
-.leading {
-    .margin-bottom(@base-leading);
-}
-
-
-// Grid and Flex Box
+// Flex Box
 // ----------------------------------------------------------------------------/
 .flex {
     display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .flex-column {
@@ -131,38 +120,41 @@
     flex-grow: 1;
 }
 
-.justify-start {
+
+// Justify Content
+// ----------------------------------------------------------------------------/
+.content-start {
     justify-content: start;
 }
 
-.justify-end {
+.content-end {
     justify-content: end;
 }
 
-.justify-center {
+.content-center {
     justify-content: center;
 }
 
-.justify-around {
+.content-stretch {
+    justify-content: stretch;
+}
+
+.content-around {
     justify-content: space-around;
 }
 
-.justify-between {
+.content-between {
     justify-content: space-between;
 }
 
-.justify-evenly {
+.content-evenly {
     justify-content: space-evenly;
 }
 
 
 // Visibility
 // ----------------------------------------------------------------------------/
-.show-print {
-    display: none;
-}
-
-.transparent {
+.opacity {
     opacity: 0.95;
 }
 
