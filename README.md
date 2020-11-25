@@ -4,28 +4,18 @@ Vaporwave Aesthetic
 
 ## Table of Contents
 
-* [Project Status](#project-status)
+* [About](#about)
 * [Getting Started](#getting-started)
-	* [Default Build](#default-build)
-	* [Custom Build](#custom-build)
-* [Contributing](#contributing)
-	* [Bug Reports](#bug-reports)
-	* [Feature Requests](#feature-requests)
-	* [Pull Requests](#pull-requests)
-* [Design Principles](#design-principles)
+    * [Default Build](#default-build)
+    * [Custom Build](#custom-build)
+    * [Contributing](#contributing)
 * [LICENSE](#license)
-
-### Project Status
-
-Project under active development. **NO** stable version has been released.
 
 ## Getting Started
 
 Start by **[downloading](https://github.com/jacobxperez/vaporwave/archive/master.zip)** the [repository](https://github.com/jacobxperez/vaporwave) or by cloning the project:
 
 	$ git clone https://github.com/jacobxperez/vaporwave.git
-
-*Keep in mind that this project is under active development and no stable version has been released.*
 
 ### Default Build
 
@@ -35,43 +25,19 @@ The easiest way to include [Vaporwave](https://jacobxperez.github.io/vaporwave/)
 
 ### Custom Build
 
-[Vaporwave](https://jacobxperez.github.io/vaporwave/) is built on [LESS](http://lesscss.org/) which extends the capabilities of CSS. Use [style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) for compiling all necessary modules for your website and the [variable files](https://github.com/jacobxperez/vaporwave/blob/master/css/less/variables) for adjusting the values of fonts, colors, padding and more.
+Adjust the [variables](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) and if needed, add [custom](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) code then compile everything together in [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) to produce the final [CSS](https://github.com/jacobxperez/essentials/blob/master/css/style.css). Optional, comment out unwanted components from [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) then compile your project. Check out [Editors and Plugins](http://lesscss.org/tools/#editors-and-plugins) for compiling [LESS](http://lesscss.org/).
 
-* [/css/style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) (for compiling all LESS modules)
-* [/css/less/variables](https://github.com/jacobxperez/vaporwave/blob/master/css/less/variables) (for changing the settings)
+* [/css](https://github.com/jacobxperez/essentials/tree/master/css)
+    * [custom.less](https://github.com/jacobxperez/essentials/blob/master/css/custom.less) (write custom modules)
+    * [style.less](https://github.com/jacobxperez/essentials/blob/master/css/style.less) (compile everything together)
+    * [variables.less](https://github.com/jacobxperez/essentials/blob/master/css/variables.less) (adjust the settings)
 
-All main components and dependencies can be found under folder [core](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core).
+### [Contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
 
-* [/css/less/core](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core)
-	* [reset](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/reset)
-	* [layout](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/layout)
-	* [mixins](https://github.com/jacobxperez/vaporwave/tree/master/css/less/core/mixins)
-
-We recommend to adding extra modules under folder [components](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components) then link to them on file [style.less](https://github.com/jacobxperez/vaporwave/blob/master/css/style.less) for compiling.
-
-* [/css/less/components](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components)
-	* [modules](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components/modules)
-	* [navigation](https://github.com/jacobxperez/vaporwave/tree/master/css/less/components/navigation)
-
-## Contributing
-
-Help us make [Vaporwave](https://jacobxperez.github.io/vaporwave/) better for everyone, any contribution will be considered. Use the [issue tracker](https://github.com/jacobxperez/vaporwave/issues) for bug reports, feature requests and submitting pull requests.
-
-### Bug Reports
-
-Please try to be as detailed as possible in your report. What is your environment? What steps will reproduce the issue? What browser(s) and OS experience the problem? What would you expect to be the outcome? All these details will help us fix any potential bugs.
-
-### Feature Requests
-
-Before opening a feature request, please take a moment to find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.
-
-### Pull Requests
-
-Please ask first before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project. When contributing code to this project always ask yourself these questions.
-
-* Is it essential?
-* Will it add value?
-* Is this change necessary?
+If your interested in contributing to this project please start by reading our
+[contributing](https://github.com/jacobxperez/essentials/blob/master/CONTRIBUTING.md)
+guidelines to better understand the nature and the direction of the project, any
+contribution will be considered.
 
 ## LICENSE
 
