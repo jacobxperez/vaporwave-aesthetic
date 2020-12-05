@@ -734,46 +734,6 @@ body > .container:last-child {
 .button.danger-bg:hover {
     background-color: #b30000;
 }
-
-body {
-    background-image: -moz-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
-    background-image: -webkit-gradient(left top, left bottom, color-stop(5%, #e6d8ff), color-stop(50%, #ffd8f1), color-stop(100%, #ffbfe8));
-    background-image: -webkit-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
-    background-image: -o-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
-    background-image: -ms-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
-    background-image: linear-gradient(top bottom, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-transform: uppercase;
-    letter-spacing: .333em;
-}
-
-pre {
-    background-color: inherit;
-    border: .125rem solid #c64799;
-}
-
-.section-block {
-    width: 100%;
-    margin-bottom: 1.25rem;
-    padding: 1.25rem 1.25rem 0;
-    border: .125rem solid #c64799;
-    background-color: #ffd8f1;
-    overflow-x: auto;
-    overflow-y: scroll;
-}
-
-.title {
-    font-size: 3.75rem;
-    font-kerning: none;
-    text-align: center;
-}
 @font-face {
     font-family: 'icons';
     src: url("../fonts/icons/icons.eot");
@@ -1903,4 +1863,44 @@ pre {
         margin: 0;
         padding: 0;
     }
+}
+
+body {
+    background-image: -moz-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+    background-image: -webkit-gradient(left top, left bottom, color-stop(5%, #e6d8ff), color-stop(50%, #ffd8f1), color-stop(100%, #ffbfe8));
+    background-image: -webkit-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+    background-image: -o-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+    background-image: -ms-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+    background-image: linear-gradient(top bottom, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    letter-spacing: .333em;
+}
+
+pre {
+    background-color: inherit;
+    border: .125rem solid #c64799;
+}
+
+.section-block {
+    width: 100%;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem 1.25rem 0;
+    border: .125rem solid #c64799;
+    background-color: #ffd8f1;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+.title {
+    font-size: 3.75rem;
+    font-kerning: none;
+    text-align: center;
 }
