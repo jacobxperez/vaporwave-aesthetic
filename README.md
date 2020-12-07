@@ -1,6 +1,6 @@
 # [V A P O R W A V E](https://jacobxperez.github.io/vaporwave-aesthetic/)
 
-Vaporwave Aesthetic template built with [Essentials](https://github.com/jacobxperez/essentials)
+A template with Vaporwave Aesthetics, built with [Essentials](https://github.com/jacobxperez/essentials)
 
 ## LICENSE
 
