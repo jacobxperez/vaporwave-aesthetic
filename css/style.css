@@ -348,13 +348,13 @@ ul {
 
 ::-moz-selection {
     background-color: #cde1ff;
-    color: #000;
+    color: #000000;
     text-shadow: none;
 }
 
 ::selection {
     background-color: #cde1ff;
-    color: #000;
+    color: #000000;
     text-shadow: none;
 }
 
