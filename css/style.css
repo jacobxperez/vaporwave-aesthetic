@@ -1726,6 +1726,8 @@ body {
     background-image: -o-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
     background-image: -ms-linear-gradient(top, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
     background-image: linear-gradient(top bottom, #e6d8ff 5%, #ffd8f1 50%, #ffbfe8 100%);
+    text-align: justify;
+    hyphens: auto;
 }
 
 h1,
