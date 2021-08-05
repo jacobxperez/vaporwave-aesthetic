@@ -4,6 +4,7 @@
     display: inline-block;
     .padding(@button-padding-y; @button-padding-x);
     .border-radius(@button-border-radius);
+    background-color: transparent;
     color: @button-color;
     cursor: pointer;
 
@@ -15,6 +16,6 @@
 
     &:focus {
         outline: thin dotted;
-        outline-offset: unit((-2px / @base-font-size), rem);
+        outline-offset: unit((-2px / @font-size), rem);
     }
 }

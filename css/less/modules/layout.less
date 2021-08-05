@@ -1,0 +1,69 @@
+// Layout
+// ----------------------------------------------------------------------------/
+body > .wrapper:first-child {
+    .margin-top(@wrapper-margin-top);
+}
+
+body > .wrapper:last-child {
+    .margin-bottom(@wrapper-margin-bottom);
+}
+
+.fixed-top + .wrapper {
+        .margin-top(@line-height * 4);
+}
+
+.fixed-top .wrapper > ul {
+    .margin-left(-@nav-link-padding-x);
+    .margin-right(-@nav-link-padding-x);
+}
+
+
+// Grid
+// ----------------------------------------------------------------------------/
+.grid {
+    display: grid;
+    .column-gap(@wrapper-gap);
+    grid-template-columns: repeat(4, 1fr);
+
+    header,
+    footer {
+        grid-column: 1 ~"/" -1;
+    }
+
+    article,
+    section {
+        grid-column: span 3;
+    }
+}
+
+
+// Small Screen Breakpoint
+// ----------------------------------------------------------------------------/
+.small-layout () {
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        article,
+        section,
+        aside,
+        nav {
+            grid-column: 1 ~"/" -1;
+        }
+    }
+
+}
+
+
+// Medium Screen Breakpoint
+// ----------------------------------------------------------------------------/
+.medium-layout () {
+    // Add code
+}
+
+
+// Large Screen Breakpoint
+// ----------------------------------------------------------------------------/
+.large-layout () {
+    // Add code
+}

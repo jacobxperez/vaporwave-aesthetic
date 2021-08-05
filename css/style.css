@@ -1,9 +1,8 @@
 /* Essentials <https://github.com/jacobxperez/essentials>
- * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
+ * Copyright (C) 2021 Jacob Perez <jacobxperez@gmx.com>
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
 ==============================================================================*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -102,6 +101,7 @@ dfn {
     font-style: italic;
 }
 
+.tooltip,
 abbr[title],
 dfn[title] {
     text-decoration: underline;
@@ -118,7 +118,7 @@ mark {
 small,
 sub,
 sup {
-    font-size: 0.75rem;
+    font-size: 0.75em;
 }
 
 sub,
@@ -291,6 +291,7 @@ select,
 .button {
     display: inline-block;
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    background-color: transparent;
     color: #c64799;
     cursor: pointer;
 }
@@ -350,27 +351,13 @@ table {
     margin-bottom: 1.5rem;
 }
 
-.container {
-    display: grid;
-    column-gap: 1.25rem;
+.wrapper {
     width: 100%;
     min-width: 20rem;
     max-width: 61.25rem;
     margin: 0 auto;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-}
-
-.max-width {
-    max-width: 100%;
-}
-
-body>.container:first-child {
-    margin-top: 3rem;
-}
-
-body>.container:last-child {
-    margin-bottom: 6rem;
 }
 
 .nav-link {
@@ -386,14 +373,24 @@ body>.container:last-child {
     text-decoration: none;
 }
 
-.alt-link {
-    color: #ffd8f1;
+.alpha-link {
+    color: #fff;
 }
 
-.alt-link.active,
-.alt-link:hover,
-.alt-link:active {
-    color: #ff59c3;
+.alpha-link.active,
+.alpha-link:hover,
+.alpha-link:active {
+    color: #bfbfbf;
+}
+
+.beta-link {
+    color: #252525;
+}
+
+.beta-link.active,
+.beta-link:hover,
+.beta-link:active {
+    color: #656565;
 }
 
 .breadcrumb li::after {
@@ -407,46 +404,19 @@ body>.container:last-child {
     margin-right: 0;
 }
 
-.box {
-    display: block;
-    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
-}
-
 .drop-box {
     display: none;
-    width: 100%;
     margin-bottom: 0;
+    width: 100%;
     min-width: 10rem;
-    background-color: #ffd8f1;
+    background-color: transparent;
     color: #c64799;
+    z-index: 100;
 }
 
+.tooltip:hover>.drop-box,
 .active+.drop-box {
     display: block;
-}
-
-.primary-text {
-    color: #7447c6;
-}
-
-.secondary-text {
-    color: #5771ff;
-}
-
-.tertiary-text {
-    color: #222;
-}
-
-.success-text {
-    color: #393;
-}
-
-.warning-text {
-    color: #fa0;
-}
-
-.danger-text {
-    color: #c00;
 }
 
 .primary {
@@ -473,15 +443,27 @@ body>.container:last-child {
     color: #ffffff;
 }
 
-.tertiary {
-    background-color: #222;
+.light {
+    background-color: #fff;
+    color: #c64799;
+}
+
+.light-hover.active,
+.light-hover:hover,
+.light-hover:active {
+    background-color: #f2f2f2;
+    color: #c64799;
+}
+
+.dark {
+    background-color: #252525;
     color: #ffffff;
 }
 
-.tertiary-hover.active,
-.tertiary-hover:hover,
-.tertiary-hover:active {
-    background-color: #151515;
+.dark-hover.active,
+.dark-hover:hover,
+.dark-hover:active {
+    background-color: #181818;
     color: #ffffff;
 }
 
@@ -521,6 +503,34 @@ body>.container:last-child {
     color: #ffffff;
 }
 
+.primary-text {
+    color: #7447c6;
+}
+
+.secondary-text {
+    color: #5771ff;
+}
+
+.light-text {
+    color: #fff;
+}
+
+.dark-text {
+    color: #252525;
+}
+
+.success-text {
+    color: #393;
+}
+
+.warning-text {
+    color: #fa0;
+}
+
+.danger-text {
+    color: #c00;
+}
+
 .disabled {
     background-color: #e6e6e6;
     color: #999999;
@@ -531,7 +541,7 @@ body>.container:last-child {
 .disabled:active {
     background-color: #e6e6e6;
     color: #999999;
-    text-decoration: none;
+    decoration: none;
 }
 
 .disabled:focus {
@@ -545,14 +555,12 @@ body>.container:last-child {
 }
 
 [class^="icon-"]:before {
-    position: relative;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1em;
     font-family: "icons";
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
-    vertical-align: middle;
     line-height: 0.625;
     text-transform: none;
     speak: none;
@@ -1478,19 +1486,36 @@ body>.container:last-child {
     content: "\e0e5";
 }
 
+body>.wrapper:first-child {
+    margin-top: 3rem;
+}
+
+body>.wrapper:last-child {
+    margin-bottom: 6rem;
+}
+
+.fixed-top+.wrapper {
+    margin-top: 6rem;
+}
+
+.fixed-top .wrapper>ul {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
 .grid {
     display: grid;
     column-gap: 1.25rem;
     grid-template-columns: repeat(4, 1fr);
 }
 
-header,
-footer {
+.grid header,
+.grid footer {
     grid-column: 1 / -1;
 }
 
-article,
-section {
+.grid article,
+.grid section {
     grid-column: span 3;
 }
 
@@ -1534,6 +1559,14 @@ pre {
     text-align: center;
 }
 
+.padding {
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+}
+
+.max-width {
+    max-width: 100%;
+}
+
 .inline {
     display: inline;
 }
@@ -1570,8 +1603,8 @@ pre {
     border-color: #5771ff;
 }
 
-.border-tertiary {
-    border-color: #222;
+.border-dark {
+    border-color: #252525;
 }
 
 .border-success {
@@ -1624,6 +1657,7 @@ pre {
     hyphens: auto;
 }
 
+.tooltip,
 .relative {
     position: relative;
 }
@@ -1646,15 +1680,6 @@ pre {
 
 .fixed-top {
     top: 0;
-}
-
-.fixed-top+.container {
-    margin-top: 6rem;
-}
-
-.fixed-top .container>ul {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
 }
 
 .fixed-bottom {
@@ -1690,10 +1715,21 @@ pre {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    article,
-    section,
-    aside,
-    nav {
+    .grid article,
+    .grid section,
+    .grid aside,
+    .grid nav {
+        grid-column: 1 / -1;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid article,
+    .grid section,
+    .grid aside,
+    .grid nav {
         grid-column: 1 / -1;
     }
 
@@ -1792,7 +1828,7 @@ pre {
         display: none;
     }
 
-    .container {
+    .wrapper {
         max-width: 100%;
         margin: 0;
         padding: 0;
