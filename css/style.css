@@ -360,6 +360,14 @@ table {
     padding-right: 1.25rem;
 }
 
+body>.wrapper:first-child {
+    margin-top: 3rem;
+}
+
+body>.wrapper:last-child {
+    margin-bottom: 6rem;
+}
+
 .nav-link {
     display: block;
     padding: 0.5rem 0.75rem 0.5rem 0.75rem;
@@ -374,7 +382,7 @@ table {
 }
 
 .alpha-link {
-    color: #fff;
+    color: #ffffff;
 }
 
 .alpha-link.active,
@@ -384,13 +392,13 @@ table {
 }
 
 .beta-link {
-    color: #252525;
+    color: #ffffff;
 }
 
 .beta-link.active,
 .beta-link:hover,
 .beta-link:active {
-    color: #656565;
+    color: #bfbfbf;
 }
 
 .breadcrumb li::after {
@@ -443,28 +451,28 @@ table {
     color: #ffffff;
 }
 
-.light {
-    background-color: #fff;
-    color: #c64799;
-}
-
-.light-hover.active,
-.light-hover:hover,
-.light-hover:active {
-    background-color: #f2f2f2;
-    color: #c64799;
-}
-
-.dark {
-    background-color: #252525;
+.tertiary {
+    background-color: #555;
     color: #ffffff;
 }
 
-.dark-hover.active,
-.dark-hover:hover,
-.dark-hover:active {
-    background-color: #181818;
+.tertiary-hover.active,
+.tertiary-hover:hover,
+.tertiary-hover:active {
+    background-color: #484848;
     color: #ffffff;
+}
+
+.primary-text {
+    color: #7447c6;
+}
+
+.secondary-text {
+    color: #5771ff;
+}
+
+.tertiary-text {
+    color: #555;
 }
 
 .success {
@@ -501,22 +509,6 @@ table {
 .danger-hover:active {
     background-color: #b30000;
     color: #ffffff;
-}
-
-.primary-text {
-    color: #7447c6;
-}
-
-.secondary-text {
-    color: #5771ff;
-}
-
-.light-text {
-    color: #fff;
-}
-
-.dark-text {
-    color: #252525;
 }
 
 .success-text {
@@ -1486,23 +1478,6 @@ table {
     content: "\e0e5";
 }
 
-body>.wrapper:first-child {
-    margin-top: 3rem;
-}
-
-body>.wrapper:last-child {
-    margin-bottom: 6rem;
-}
-
-.fixed-top+.wrapper {
-    margin-top: 6rem;
-}
-
-.fixed-top .wrapper>ul {
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
-}
-
 .grid {
     display: grid;
     column-gap: 1.25rem;
@@ -1603,8 +1578,8 @@ pre {
     border-color: #5771ff;
 }
 
-.border-dark {
-    border-color: #252525;
+.border-tertiary {
+    border-color: #555;
 }
 
 .border-success {
@@ -1686,6 +1661,15 @@ pre {
     bottom: 0;
 }
 
+.fixed-top+.wrapper {
+    margin-top: 6rem;
+}
+
+.fixed-top .wrapper>ul {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
 .top {
     bottom: 100%;
 }
@@ -1711,17 +1695,6 @@ pre {
 }
 
 @media screen and (max-width: 42.5em) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .grid article,
-    .grid section,
-    .grid aside,
-    .grid nav {
-        grid-column: 1 / -1;
-    }
-
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
