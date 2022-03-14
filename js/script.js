@@ -1,19 +1,20 @@
-/* Essentials <https://github.com/jacobxperez/essentials>
- * Copyright (C) 2020 Jacob Perez <jacobxperez@gmx.com>
+/* RAMs <https://github.com/jacobxperez/rams>
+ * Copyright (C) 2022 Jacob Perez <jacobxperez@gmx.com>
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
 ------------------------------------------------------------------------------*/
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
-    // Toggle
-    (function () {
-        const getToggle = document.querySelectorAll(".js-toggle");
-        const getToggleReset = document.querySelectorAll(".js-toggle-reset");
+    // Dropdown
+    (() => {
+        const getDropDown = document.querySelectorAll('[data-dropdown]');
+        const getMenu = document.querySelectorAll('[data-dropdown="menu"]');
+        const getToolTip = document.querySelectorAll('[data-dropdown="tooltip"]');
 
-        for (let i = 0; i < getToggle.length; i++) {
-            getToggle[i].addEventListener("click", function(e) {
+        // toggle class active
+        for (let i = 0; i < getDropDown.length; i++) {
+            getDropDown[i].addEventListener("click", function (e) {
 
-                // toggle class show
                 if (this.classList.contains("active") === false) {
 
                     this.classList.add("active");
@@ -22,32 +23,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     this.classList.remove("active");
 
-                } // end if block
+                };
 
                 e.stopPropagation();
             });
-        } // end for loop
+        };
 
-        // Hide ghost-box on window click
-        document.addEventListener("click", function(e) {
-            // check if target is not dropdown
-            if (e.target !== getToggleReset) {
-                for (let i = 0; i < getToggleReset.length; i++) {
-                    // removes class show from all dropdowns
-                    getToggleReset[i].classList.remove("active");
-                } // end for loop
+        // Close dropdown on document click
+        document.addEventListener("click", function (e) {
+            for (let i = 0; i < getMenu.length; i++) {
+                if (e.target !== getMenu[i]) {
+
+                    getMenu[i].classList.remove("active");
+
+                };
             }
+
+            for (let i = 0; i < getToolTip.length; i++) {
+                if (e.target !== getToolTip[i]) {
+
+                    getToolTip[i].classList.remove("active");
+
+                };
+            };
         });
     })();
-    // end Toggle
+    // end Dropdown
 
 
     // Smooth Scroll
-    (function () {
+    (() => {
         const intLinks = document.querySelectorAll("a[href^='#']");
 
         for (let i = 0; i < intLinks.length; i++) {
-            intLinks[i].addEventListener("click", function(e) {
+            intLinks[i].addEventListener("click", function (e) {
 
                 e.preventDefault();
 
@@ -56,8 +65,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 });
 
             });
-        } // end for loop
+        };
     })();
     // end Smooth Scroll
 
-}); // end Script
+});

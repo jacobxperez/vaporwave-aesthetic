@@ -37,7 +37,6 @@ summary {
 
 html {
     font-size: 100%;
-    font-size: clamp(1rem, 1vw, 1.25rem);
 }
 
 body {
@@ -45,8 +44,8 @@ body {
     font-weight: 400;
     line-height: 1.375;
     text-align: left;
-    color: #c64799;
-    background-color: #e6d8ff;
+    color: #aaa;
+    background-color: #252525;
     overflow: auto;
 }
 
@@ -71,7 +70,6 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
     font-weight: 400;
 }
 
@@ -321,7 +319,7 @@ select,
 a {
     text-decoration: none;
     background-color: transparent;
-    color: #7447c6;
+    color: #00ac25;
     cursor: pointer;
 }
 
@@ -356,7 +354,7 @@ a:focus {
 }
 
 [data-container="fit"] {
-    max-width: 62.5rem;
+    max-width: 61.25rem;
 }
 
 body>[data-container]:first-child {
@@ -376,7 +374,7 @@ body>[data-container]:last-child {
     visibility: hidden;
     min-width: 10rem;
     background-color: transparent;
-    color: #c64799;
+    color: #aaa;
     z-index: 100;
 }
 
@@ -415,7 +413,7 @@ body>[data-container]:last-child {
 [data-nav="link"].active,
 [data-nav="link"]:hover,
 [data-nav="link"]:active {
-    color: #c64799;
+    color: #aaa;
 }
 
 [data-flex~="nav"] {
@@ -479,13 +477,13 @@ body>[data-container]:last-child {
 }
 
 [data-button="tertiary"] {
-    background-color: #c64799;
+    background-color: #aaa;
     color: #ffffff;
 }
 
 [data-button="tertiary-outline"] {
-    color: #c64799;
-    border-color: #c64799;
+    color: #aaa;
+    border-color: #aaa;
 }
 
 [data-button="tertiary"].active,
@@ -495,18 +493,18 @@ body>[data-container]:last-child {
 [data-button="tertiary"]:active,
 [data-button="tertiary-outline"]:active {
     border-color: rgba(0, 0, 0, 0.3);
-    background-color: #ba3a8c;
+    background-color: #9d9d9d;
     color: #ffffff;
 }
 
 [data-button="secondary"] {
-    background-color: #5771ff;
+    background-color: #333;
     color: #ffffff;
 }
 
 [data-button="secondary-outline"] {
-    color: #5771ff;
-    border-color: #5771ff;
+    color: #333;
+    border-color: #333;
 }
 
 [data-button="secondary"].active,
@@ -516,18 +514,18 @@ body>[data-container]:last-child {
 [data-button="secondary"]:active,
 [data-button="secondary-outline"]:active {
     border-color: rgba(0, 0, 0, 0.3);
-    background-color: #3e5bff;
+    background-color: #262626;
     color: #ffffff;
 }
 
 [data-button="primary"] {
-    background-color: #7447c6;
+    background-color: #00ac25;
     color: #ffffff;
 }
 
 [data-button="primary-outline"] {
-    color: #7447c6;
-    border-color: #7447c6;
+    color: #00ac25;
+    border-color: #00ac25;
 }
 
 [data-button="primary"].active,
@@ -537,7 +535,7 @@ body>[data-container]:last-child {
 [data-button="primary"]:active,
 [data-button="primary-outline"]:active {
     border-color: rgba(0, 0, 0, 0.3);
-    background-color: #673aba;
+    background-color: #009320;
     color: #ffffff;
 }
 
@@ -630,12 +628,12 @@ body>[data-container]:last-child {
 }
 
 body {
-    background-image: -moz-linear-gradient(top, #e9ddff 5%, #e6d8ff 50%, #d6bfff 100%);
-    background-image: -webkit-gradient(left top, left bottom, color-stop(5%, #e9ddff), color-stop(50%, #e6d8ff), color-stop(100%, #d6bfff));
-    background-image: -webkit-linear-gradient(top, #e9ddff 5%, #e6d8ff 50%, #d6bfff 100%);
-    background-image: -o-linear-gradient(top, #e9ddff 5%, #e6d8ff 50%, #d6bfff 100%);
-    background-image: -ms-linear-gradient(top, #e9ddff 5%, #e6d8ff 50%, #d6bfff 100%);
-    background-image: linear-gradient(to top, #e9ddff 5%, #e6d8ff 50%, #d6bfff 100%);
+    background-image: -moz-linear-gradient(top, #282828 5%, #252525 50%, #181818 100%);
+    background-image: -webkit-gradient(left top, left bottom, color-stop(5%, #282828), color-stop(50%, #252525), color-stop(100%, #181818));
+    background-image: -webkit-linear-gradient(top, #282828 5%, #252525 50%, #181818 100%);
+    background-image: -o-linear-gradient(top, #282828 5%, #252525 50%, #181818 100%);
+    background-image: -ms-linear-gradient(top, #282828 5%, #252525 50%, #181818 100%);
+    background-image: linear-gradient(to top, #282828 5%, #252525 50%, #181818 100%);
 }
 
 h1,
@@ -650,15 +648,15 @@ h6 {
 
 pre {
     background-color: inherit;
-    border: 0.125rem solid #c64799;
+    border: 0.125rem solid #aaa;
 }
 
 .section-block {
     width: 100%;
     margin-bottom: 1.25rem;
     padding: 1.25rem 1.25rem 0rem 1.25rem;
-    border: 0.125rem solid #c64799;
-    background-color: #e6d8ff;
+    border: 0.125rem solid #aaa;
+    background-color: #252525;
     overflow-x: auto;
     overflow-y: scroll;
 }
@@ -1717,7 +1715,7 @@ pre {
     right: 0;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 61.25em) {
     h1 {
         font-size: 4rem;
     }
@@ -1747,7 +1745,7 @@ pre {
     }
 }
 
-@media screen and (min-width: 42.50390625em) and (max-width: 62.49609375em) {
+@media screen and (min-width: 42.50390625em) and (max-width: 61.24609375em) {
     h1 {
         font-size: 3.125rem;
     }
@@ -1822,7 +1820,7 @@ pre {
 }
 
 ::selection {
-    background-color: #5771ff;
-    color: #ffffff;
+    background-color: #d8e5ff;
+    color: #000000;
     text-shadow: none;
 }

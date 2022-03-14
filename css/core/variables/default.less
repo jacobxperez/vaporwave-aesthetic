@@ -1,7 +1,6 @@
 // Default Variables
 // ============================================================================/
 
-
 // Main Colors
 // ----------------------------------------------------------------------------/
 @background-color: #fff;
@@ -24,13 +23,6 @@
 
 // Typography
 // ----------------------------------------------------------------------------/
-// font stack
-@font-sans: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, sans-serif;
-@font-system: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-@font-serif: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
-@font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
-
-// main font
 @font-family: @font-sans;
 @font-size: 16px;
 @font-scale: false;
@@ -76,20 +68,20 @@
 
 // mark
 @mark-background: #fc0;
-@mark-color: contrast(@mark-background);
+@mark-text: contrast(@mark-background);
 
 // hr
 @hr-border-width: @border-width;
 @hr-border-color: @border-color;
 
 
-// Page wrapper
+// Container
 // ----------------------------------------------------------------------------/
-@wrapper-margin-top: @line-height * 3;
-@wrapper-margin-bottom: @line-height * 4;
-@wrapper-min-width: 320px;
-@wrapper-max-width: 980px;
-@wrapper-gap: 20px;
+@container-margin-top: @line-height * 3;
+@container-margin-bottom: @line-height * 4;
+@container-min-width: 320px;
+@container-max-width: 980px;
+@container-gap: 20px;
 
 
 // Breakpoints
@@ -102,7 +94,7 @@
 @screen-medium-max-width: (@screen-large-min-width - 1 / @font-size);
 
 // large screens
-@screen-large-min-width: (@wrapper-max-width);
+@screen-large-min-width: (@container-max-width);
 
 
 // Box Model
@@ -156,8 +148,10 @@
 
 // Form
 // ----------------------------------------------------------------------------/
-@form-background-color: false;
+@form-background: transparent;
+@form-background-focus: #fff8eb;
 @form-color: false;
+@form-color-focus: contrast(@form-background-focus);
 @form-padding-y: @padding-y;
 @form-padding-x: @padding-x;
 @form-border-width: @border-width;
@@ -168,48 +162,64 @@
 
 // Button
 // ----------------------------------------------------------------------------/
-@button-background-color-hover: rgba(0,0,0,0.1);
+@button-background: transparent;
+@button-background-hover: rgba(0,0,0,0.1);
 @button-padding-y: @padding-y;
 @button-padding-x: @padding-x;
+@button-border-width: @border-width;
+@button-border-color: transparent;
 @button-border-radius: false;
 
 
 // Navigation
 // ----------------------------------------------------------------------------/
-@nav-background-color: #222;
+@nav-padding-y: @padding-y;
+@nav-padding-x: @padding-x;
 
-// nav link
-@nav-link-color: #fff;
-@nav-link-color-hover: #aaa;
-@nav-link-padding-y: @padding-y;
-@nav-link-padding-x: @padding-x;
+// navbar
+@navbar-background: #222;
+@navbar-sub-background: lighten(@navbar-background, 5%);
+@navbar-link-color: contrast(@navbar-background);
+@navbar-link-color-hover: #aaa;
 
 // breadcrumb
-@breadcrumb-separator: " /";
+@breadcrumb-separator: "/";
 
 
 // Dropdown
 // ----------------------------------------------------------------------------/
-@dropdown-width: 160px;
-@box-background-color: @background-color;
+@dropbox-min-width: 160px;
+@tip-background: @navbar-sub-background;
+@tip-text-color: contrast(@tip-background);
+
+
+// Box
+// ----------------------------------------------------------------------------/
+@box-background: transparent;
 
 
 // Call to Action Colors
 // ----------------------------------------------------------------------------/
-@success: #393;
+@success: #00c853 ;
 @success-text: contrast(@success);
 @success-hover: darken(@success, 5%);
 
-@warning: #fa0;
+@warning: #ffab00 ;
 @warning-text: contrast(@warning);
 @warning-hover: darken(@warning, 5%);
 
-@danger: #c00;
+@danger: #ff3d00 ;
 @danger-text: contrast(@danger);
 @danger-hover: darken(@danger, 5%);
 
 @disabled: #e6e6e6;
 @disabled-text: lighten(contrast(@disabled), 60%);
+
+
+// Selection
+// ----------------------------------------------------------------------------/
+@selection-background: #d8e5ff;
+@selection-text: contrast(@selection-background);
 
 
 // Iconography
@@ -220,7 +230,10 @@
 @icon-line-height: 10px;
 
 
-// Selection
+// Font Stack
 // ----------------------------------------------------------------------------/
-@selection-background: #cde1ff;
-@selection-color: contrast(@selection-background);
+@font-sans: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Nimbus Sans L", "Liberation Sans", FreeSans, sans-serif;
+@font-system: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@font-serif: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", "Liberation Serif", FreeSerif, serif;
+@font-mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", "Nimbus Mono L", "Liberation Mono", FreeMono, monospace;
+
