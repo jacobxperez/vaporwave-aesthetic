@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    text-align: inherit;
+    vertical-align: baseline;
+    outline: 0;
+}
+
+html {
+    background-color: $background;
+    color: $font-color;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    text-align: left;
+    overflow-wrap: break-word;
+    scroll-behavior: smooth;
+}
+
+img,
+svg,
+picture,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+    display: block;
+    max-width: 100%;
+}

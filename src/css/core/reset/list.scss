@@ -1,0 +1,38 @@
+ol,
+ul {
+    list-style-type: none;
+}
+
+[data-list="ol"],
+[data-list="ul"],
+[data-list="dl"] {
+    padding-left: $leading;
+    @extend [data-leading];
+}
+
+[data-list="ol"],
+[data-list="ul"] {
+    list-style-position: outside;
+}
+
+[data-list="ol"] {
+    list-style-type: $ol-list-style-type;
+}
+
+[data-list="ol"] > li:first-child > [data-list="ol"] {
+    list-style-type: $ol-list-style-type-child;
+}
+
+[data-list="ul"] {
+    list-style-type: $ul-list-style-type;
+}
+
+[data-list="ul"] > li:first-child > [data-list="ul"] {
+    list-style-type: $ul-list-style-type-child;
+}
+
+:where([data-list="ol"]) [data-list],
+:where([data-list="ul"]) [data-list],
+:where([data-list="dl"]) [data-list] {
+    margin: 0;
+}

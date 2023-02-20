@@ -1,0 +1,39 @@
+select,
+textarea,
+input:not([type="button"], [type="reset"], [type="submit"]) {
+    display: block;
+    width: 100%;
+    padding: $form-padding-y $form-padding-x;
+    border: $form-border-width solid $form-border-color;
+    background-color: $form-background;
+    color: $form-text;
+    @if $form-border-radius != false {
+        border-radius: $form-border-radius;
+    }
+}
+
+select:focus,
+textarea:focus,
+input:focus:not([type="button"], [type="reset"], [type="submit"]) {
+    color: $form-text-active;
+    border-color: $form-border-active;
+}
+
+textarea {
+    min-height: $text-area-min-height;
+    overflow: auto;
+    resize: vertical;
+}
+
+button,
+select,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    overflow: visible;
+    text-transform: none;
+}
+
+:not([type="submit"]):invalid {
+    border-color: $danger;
+}

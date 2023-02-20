@@ -1,0 +1,27 @@
+html {
+    background: linear-gradient(0deg, hsl(260, 100%, 95%) 5%, hsl(260, 100%, 90%) 85%, hsl(260, 100%, 85%) 100%);
+    text-align: justify;
+    hyphens: auto;
+}
+
+:--headings {
+    text-transform: uppercase;
+    letter-spacing: 0.1875em;
+}
+
+pre {
+    border: 2px solid $font-color;
+}
+
+[data-section] {
+    padding: $wrapper-gap;
+    border: 2px solid $font-color;
+    background-color: $background;
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+[data-text="title"] {
+    font-kerning: none;
+    text-align: center;
+}
