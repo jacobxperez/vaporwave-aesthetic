@@ -1,4 +1,4 @@
-#[V A P O R W A V E](https://jacobxperez.github.io/vaporwave-aesthetic/)
+# [V A P O R W A V E](https://jacobxperez.github.io/vaporwave-aesthetic/)
 
 A template with Vaporwave Aesthetics — built with [Rams](https://github.com/jacobxperez/rams)
 
