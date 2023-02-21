@@ -1,5 +1,5 @@
 html {
-    background: linear-gradient(0deg, hsl(260, 100%, 95%) 5%, hsl(260, 100%, 90%) 85%, hsl(260, 100%, 85%) 100%);
+    background: linear-gradient(0deg, hsl(260, 100%, 95%) 5%, hsl(260, 100%, 90%) 85%, hsl(260, 100%, 85%) 97%, hsl(260, 100%, 80%) 100%);
     text-align: justify;
     hyphens: auto;
 }
@@ -13,7 +13,7 @@ pre {
     border: 2px solid $font-color;
 }
 
-[data-section] {
+[data-wrapper~="section"] {
     padding: $wrapper-gap;
     border: 2px solid $font-color;
     background-color: $background;
