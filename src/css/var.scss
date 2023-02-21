@@ -27,11 +27,6 @@ $tertiary: var(--font-color);
 $tertiary-text: hsl(0, 0%, 100%);
 $tertiary-active: hsl(0, 0%, 20%);
 
-$navbar-background: hsl(0, 0%, 15%);
-$navbar-child-background: hsl(0, 0%, 20%);
-$navbar-anchor-text: hsl(0, 0%, 100%);
-$navbar-anchor-text-active: hsl(0, 0%, 70%);
-
 /* Box Model */
 $space-y: 0.5rem;
 $space-x: 0.75rem;
@@ -128,7 +123,7 @@ $disabled-text: hsl(0, 0%, 50%);
 
 /* Navbar */
 $navbar-background: var(--font-color);
-$navbar-child-background: hsl(320, 50%, 60%);
+$navbar-dropbox-background: hsl(320, 50%, 60%);
 $navbar-anchor-text: var(--background);
 $navbar-anchor-text-active: hsl(320, 50%, 80%);
 
@@ -149,13 +144,12 @@ $breadcrumb-separator: "/";
 
 /* Dropdown */
 $dropbox-min-width: 10rem;
-$dropbox-transition: opacity 0.2s ease-out;
+$dropbox-transition: all 0.2s ease-out;
 
-/* Tooltip */
-$tooltip-min-width: $dropbox-min-width;
-$tooltip-background: $navbar-child-background;
+/* tooltip */
+$tooltip-min-width: 26ch;
+$tooltip-background: $navbar-dropbox-background;
 $tooltip-text: hsl(0, 0%, 100%);
-$tooltip-transition: opacity 0.4s ease-out;
 
 /* Iconography */
 $icon-font-name: "icons";
@@ -175,7 +169,7 @@ $wrapper-gap: $grid-gap;
 $screen-small-max-width: 42.5em; /* small screen 680px */
 $screen-medium-min-width: 42.5625em; /* medium screen 681px*/
 $screen-medium-max-width: 61.1875em; /* medium screen 979px */
-$screen-large-min-width: 62.5em; /* large screens 980px */
+$screen-large-min-width: 61.25em; /* large screens 980px */
 
 /* Print */
 $print-font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, "Nimbus Roman No9 L", serif;
