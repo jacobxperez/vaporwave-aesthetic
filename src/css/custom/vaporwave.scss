@@ -25,3 +25,8 @@ pre {
     font-kerning: none;
     text-align: center;
 }
+
+[data-nav="align"] {
+    margin: 0 -#{$space-x};
+}
+
