@@ -25,7 +25,7 @@ $secondary-active: hsl(250, 50%, 55%);
 
 $tertiary: var(--font-color);
 $tertiary-text: hsl(0, 0%, 100%);
-$tertiary-active: hsl(0, 0%, 20%);
+$tertiary-active: hsl(320, 50%, 55%);
 
 /* Box Model */
 $space-y: 0.5rem;
@@ -102,7 +102,7 @@ $button-border-color: transparent;
 $button-border-radius: false;
 $button-background: hsla(0, 0%, 50%, 0.1);
 $button-background-active: hsla(0, 0%, 50%, 0.2);
-$button-text-color: $font-color;
+$button-text-color: hsl(0, 0%, 15%);
 
 /* Feedback */
 $success: hsl(150, 100%, 25%);
@@ -161,7 +161,7 @@ $grid-gap: 1.25rem;
 /* Wrapper */
 $wrapper-min-width: 20rem;
 $wrapper-max-width: 65rem;
-$wrapper-margin-top: calc($leading * 3);
+$wrapper-margin-top: calc($leading * 2);
 $wrapper-margin-bottom: calc($leading * 4);
 $wrapper-gap: $grid-gap;
 
