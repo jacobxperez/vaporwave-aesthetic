@@ -1,6 +1,0 @@
-{
-  "plugins": {
-    "postcss-custom-selectors": true,
-    "postcss-variable-compress": true
-  }
-}
