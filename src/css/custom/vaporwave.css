@@ -27,6 +27,5 @@ pre {
 }
 
 [data-nav="align"] {
-    margin: 0 -#{$space-x};
+    margin: 0 -$space-x;
 }
-

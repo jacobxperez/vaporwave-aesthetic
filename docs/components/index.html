@@ -7,7 +7,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Components - Rams</title>
-        <link rel="stylesheet" href="../../src/css/main.scss" />
+        <link rel="stylesheet" href="../../src/css/main.css" />
         <script src="../../src/js/main.js"></script>
     </head>
 
@@ -40,7 +40,7 @@
 
                 <!-- Dropdown Menu: show on small screens -->
                 <li data-display="small">
-                    <a data-anchor="navbar" data-icon="&#xe081;" data-toggle="pop"></a>
+                    <a data-anchor="navbar" data-toggle="dropdown" data-icon="&#xe081;"></a>
 
                     <ul data-dropbox="navbar" data-position="absolute left right">
                         <li><a data-anchor="navbar" href="../index.html">Read Me</a></li>
@@ -166,7 +166,7 @@
                     <p>Display additional context on hover or on click with tooltip.</p>
 
                     <p>
-                        <span data-toggle="tooltip"
+                        <span data-toggle="dropdown tooltip"
                             >Tooltip!
                             <span data-dropbox="tooltip">Lorem ipsum dolor sit amet</span>
                         </span>
@@ -183,7 +183,9 @@
                                 <span data-icon="&#xe043;"></span>
                             </a>
 
-                            <div data-dropbox="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.</div>
+                            <div data-dropbox data-box="padding-x padding-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.
+                            </div>
                         </li>
 
                         <li>
@@ -192,7 +194,9 @@
                                 <span data-icon="&#xe043;"></span>
                             </a>
 
-                            <div data-dropbox="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.</div>
+                            <div data-dropbox data-box="padding-x padding-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.
+                            </div>
                         </li>
 
                         <li>
@@ -201,7 +205,9 @@
                                 <span data-icon="&#xe043;"></span>
                             </a>
 
-                            <div data-dropbox="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.</div>
+                            <div data-dropbox data-box="padding-x padding-bottom">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, aut.
+                            </div>
                         </li>
                     </ul>
                 </section>
