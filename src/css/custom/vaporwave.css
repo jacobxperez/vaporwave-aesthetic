@@ -26,6 +26,6 @@ pre {
     text-align: center;
 }
 
-[data-nav="align"] {
+[data-flex="align"] {
     margin: 0 -$space-x;
 }

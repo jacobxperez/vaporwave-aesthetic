@@ -6,7 +6,7 @@
 /* @media (prefers-color-scheme: dark) {
     :root {
         --background: hsl(0, 0%, 10%);
-        --font-color: hsl(0, 0%, 70%);
+        --font-color: hsl(0, 0%, 60%);
     }
 } */
 
@@ -142,11 +142,11 @@ $nav-line-anchor-border-active: $primary;
 /* Breadcrumb */
 $breadcrumb-separator: "/";
 
-/* Dropdown */
+/* Dropbox */
 $dropbox-min-width: 10rem;
-$dropbox-transition: all 0.2s ease-out;
+$dropbox-transition: opacity 0.2s ease-out;
 
-/* tooltip */
+/* Tooltip */
 $tooltip-min-width: 26ch;
 $tooltip-background: $secondary;
 $tooltip-text: hsl(0, 0%, 100%);
