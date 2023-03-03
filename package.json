@@ -9,7 +9,7 @@
     "docs": "parcel docs/index.html --no-source-maps",
     "dev": "parcel --no-source-maps",
     "watch": "parcel watch --no-source-maps",
-    "build": "parcel build --no-source-maps --public-url /vaporwave-aesthetic"
+    "build": "parcel build --no-source-maps --no-content-hash --public-url /vaporwave-aesthetic"
   },
   "repository": {
     "type": "git",
